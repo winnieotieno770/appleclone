@@ -75,6 +75,7 @@ a{
   }
 .container{
       width: 90%;
+      overflow-x:hidden;
   }
 .hero{
     width: 100%;
@@ -176,7 +177,7 @@ footer a{
         background-position:center bottom;
         position: relative;
         cursor: pointer;
-        overflow: hidden;
+        
     
     
     }
@@ -185,7 +186,6 @@ h1{
     font-size: 30px;
     color:#fff;
     opacity: .9;
-    padding-left: 10px;
     font-weight: 100;
 }
     #content{
