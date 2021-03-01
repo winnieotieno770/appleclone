@@ -17,7 +17,7 @@ body{
 header{
     position: relative;
     top: 230px;
-    left: 1%;
+    left: 4%;
     
 }
 nav{
@@ -82,7 +82,7 @@ a{
     margin: 0 auto;
     background-image: url("./images/hero.png");
     background-repeat: no-repeat;
-    height: 600px;
+    height: 650px;
     background-size: cover;
     background-position:center bottom;
     position: relative;
