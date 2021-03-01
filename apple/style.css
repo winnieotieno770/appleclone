@@ -1,4 +1,3 @@
-
 html, body {
     position: relative;
     z-index: 1;
@@ -9,15 +8,16 @@ html, body {
 body{
     margin: 0;
     padding:0;
+    overflow-x: hidden;
     font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
     background-color: transparent;
    -webkit-font-smoothing: antialiased;
+   
 }
 header{
-
     position: relative;
     top: 230px;
-    left: 4%;
+    left: 1%;
     
 }
 nav{
@@ -46,7 +46,7 @@ nav a:hover{
     background-image: linear-gradient(to top, #bebbbb 0%, #464646 51%, #1b1b1b 100%);
 }
 .searchbtn {
-    width: 120px;
+    width: 40px;
     height: auto;
     border: 1px solid rgb(180, 176, 176);
     border-radius: 12px;
@@ -73,16 +73,20 @@ a{
     text-decoration: underline;
     cursor: pointer;
   }
+.container{
+      width: 90%;
+  }
 .hero{
     width: 100%;
     margin: 0 auto;
     background-image: url("./images/hero.png");
     background-repeat: no-repeat;
-    height: 630px;
-    background-position: center bottom;
+    height: 600px;
     background-size: cover;
+    background-position:center bottom;
     position: relative;
     cursor: pointer;
+    
 
 
 }
@@ -139,6 +143,8 @@ h1{
     height: 180px;
     position: relative;
     cursor: pointer;
+  
+
 }
 
 footer{
@@ -155,3 +161,104 @@ footer a{
     margin-right: 10px;
 }
 
+/* media querries */
+@media (max-width:498px){
+    .container{
+        overflow-x: inherit;
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("./images/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center bottom;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    
+    
+    }
+    
+h1{
+    font-size: 30px;
+    color:#fff;
+    opacity: .9;
+    padding-left: 10px;
+    font-weight: 100;
+}
+    #content{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+           
+    }
+    #picture{
+        display: block;
+        width: 100%;
+        
+    }
+   .image{
+        width: 100%;
+        height: 500px;
+    }
+    
+#iphoneS{
+    background-image:url("./images/1_iphone5s.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+#iphoneC{
+    background-image:url("./images/2_iphone5c.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+#iphoneHappy{
+    background-image:url("./images/mac.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+
+}#iphoneSupplier{
+    background-image:url("./images/4_supplier_responsibility.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    font-size: 29px;
+    display: block;
+    font-family: calibri,helvetica,sans-serif;
+    background-color:#fff;
+     margin-bottom: 0px;
+   
+}
+.box1{
+    display: block;
+    word-wrap:break-word;
+    height: 200px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 2px;
+    
+}
+.box2{
+    height: 120px;
+    line-height: 1.5;
+    padding: 2px;
+    text-align: center;
+}
+
+}
